@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sensor Data</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <h2>Latest Sensor Data</h2>
+        <div class="date">
+            <p><span class="material-symbols-outlined">calendar_month</span> {{ date }}</p>
+            <p><span class="material-symbols-outlined">schedule</span> {{ time }}</p>
+        </div>
+        <div class="sensors">
+            <p><span class="material-symbols-outlined">device_thermostat</span> {{ temperature }}°C</p>
+            <p><span class="material-symbols-outlined">humidity_percentage</span> {{ humidity }}%</p>
+        </div>
+    </div>
+</body>
+</html>

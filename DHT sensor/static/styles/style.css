@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: "Anton", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2em;
+    letter-spacing: 4px;
+    background-color: #e2dccd;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2em;
+    background-color: #0080cd;
+    padding: 3em;
+    border-radius: 20px;
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sensors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2em;
+}
